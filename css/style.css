@@ -16,7 +16,6 @@ nav{
 	position: fixed;
 	z-index: 1;
 	opacity: .9;
-	overflow-y: auto;
 }
 .pageLinks{
 	font-family: 'Pacifico', sans-serif;
@@ -28,6 +27,9 @@ nav{
 	font-size: 23px;
 	display: inline;
 	padding: 0em 1.5em;
+}
+#homeLink{
+	font-size: 33px;
 }
 a{
 	text-decoration: none;
@@ -44,19 +46,16 @@ a:hover{
 
 /* HOME */
 
-#homeLink{
-	font-size: 33px;
-}
 #homeSection{
 	background-image: url("http://freenaturestock.s3.amazonaws.com/481.jpg");
 	background-attachment: fixed;
-	background-size: 100% 100%;
+	background-size: cover;
 	top: 0px;
-	height: 100%;
-	min-height: 300px;
+	height: 100vh;
 	width: 100%;
 	position: relative;
 	text-align: center;
+	margin-top: 30px;
 	padding-top: 100px;
 	padding-bottom: 60px;
 	z-index: -1;
@@ -66,12 +65,13 @@ a:hover{
 	font-weight: 100;
 }
 .mainText h1{
-	font-size: 200px;
+	font-size: 15vw;
+	margin-top: 11vh;
 	font-weight: bold;
-	margin-bottom: -20px;
+	margin-bottom: -2vw;
 }
 .mainText h4{
-	font-size: 30px;
+	font-size: 2vw;
 }
 .explore{
 	font-family: 'Pacifico', sans-serif;
@@ -84,8 +84,8 @@ a:hover{
 }
 hr{
 	display:inline-block;
-	width:540px;
-	height: 10px;
+	width: 43vw;
+	height: .75vw;
 	background: #FFFFFF;
 	border: 0;
 	margin-right: 10px;
@@ -96,7 +96,6 @@ hr{
 #allSections{
 	background-color: #FFFFFF;
 	width: 100%;
-	margin-bottom: 50px;
 	margin-top: 75px;
 }
 .lesserSection{
@@ -111,8 +110,14 @@ hr{
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.item{
-	display: inline-block;
+.stackItem{
+	display: block;
+	padding-bottom: 50px;
+}
+.rowItem{
+	display:inline-block;
+	margin-left:20px;
+	margin-right:20px;
 	padding-bottom: 50px;
 }
 .info{
@@ -131,8 +136,9 @@ hr{
 	max-width: 450px;
 }
 img{
-	width: 350px;
-	height: 250px;
+	width: 90%;
+	max-width: 350px;
+	max-height: 250px;
 }
 .leftItem{
 	display:inline-block;
@@ -142,13 +148,13 @@ img{
 	display:inline-block;
 	text-align: left;
 }
-.food.item, .activities.item{
-	margin-left:20px;
-	margin-right:20px;
-}
 #beachSection, #landmarkSection{
 	background-color: #DDDDDD;
 }
+.lastSection{
+	padding-bottom: 50px;
+}
+
 
 /* FOOTER */
 
