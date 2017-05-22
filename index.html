@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html html lang="en-us">
 
 	<head>
 
 		<title>Tara Gildersleeve's Web Dev Practice</title>
 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+
 		<link href="css/style.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-
+		
 	</head>
 
 	<body>
 
 		<!-- NAVIGATION -->
 		<nav>
-			<ul>
-				<div class="pageLinks">
-					<li><a href="#beachAnchor"> Beaches </a></li>
-					<li><a href="#foodAnchor"> Food & Drink </a></li>
-					<li><a href="#homeSection"> Home </a></li>
-					<li><a href="#landmarkAnchor"> Landmarks </a></li>
-					<li><a href="#activitiesAnchor"> Activities </a></li>
-				</div>
+			<div class="mobileMenu"> 
+				<i class="fa fa-bars fa-2x" id="menu" aria-hidden="true"></i>
+				<a href="#homeSection" class="menuItem"> Home </a>
+				<a href="#beachAnchor" class="menuItem"> Beaches </a>
+				<a href="#foodAnchor" class="menuItem"> Food & Drink </a>
+				<a href="#landmarkAnchor" class="menuItem"> Landmarks </a>
+				<a href="#activitiesAnchor" class="menuItem"> Activities </a>
+			</div>
+			<ul class="pageLinks">
+				<li><a href="#beachAnchor"> Beaches </a></li>
+				<li><a href="#foodAnchor"> Food & Drink </a></li>
+				<li id="homeLink"><a href="#homeSection"> Home </a></li>
+				<li><a href="#landmarkAnchor"> Landmarks </a></li>
+				<li><a href="#activitiesAnchor"> Activities </a></li>
 			</ul>
 		</nav>
 
@@ -30,9 +39,6 @@
 		<section id="homeSection">
 			<div class="mainText">
 				<h1> Encinitas </h1>
-				<div class="underbar">
-					<h4> <hr noshade> check me out yo </h4>
-				</div>
 			</div>
 			<div class="explore">
 				<div class="exploreText">
@@ -55,7 +61,7 @@
 				<div class= "sectionContents">
 					<div class="beach stackItem">
 							<span class="photo leftItem">
-								<img src="images/Beach-Holder.png">
+								<img src="images/Beach-Holder-Tree.png">
 							</span>
 							<span class="info rightItem">
 								<div class="name">
@@ -66,8 +72,8 @@
 								</div>
 							</span>
 					</div>
-					<div class="beach stackItem">
-							<span class="info leftItem">
+					<div class="beach stackItem mobileSwap">
+							<span class="info leftItem infoSwap">
 								<div class="name">
 									Swami's
 								</div>
@@ -75,7 +81,7 @@
 									Swami's has a nice surf break, but a small parking lot. Make sure to clamber around the rock reef or stop nextdoor by the Self Realization Gardens to meditate.
 								</div>
 							</span>
-							<span class="photo rightItem">
+							<span class="photo rightItem photoSwap">
 								<img src="images/Beach-Holder.png">
 							</span>
 					</div>
@@ -103,7 +109,7 @@
 				<div class= "sectionContents">
 					<div class="food rowItem">
 						<div class="photo">
-							<img src="images/Beach-Holder.png">
+							<img src="images/Boba-Holder.png">
 						</div>
 						<div class="info">
 							<div class="name">
@@ -116,7 +122,7 @@
 					</div>
 					<div class="food rowItem">
 						<div class="photo">
-							<img src="images/Beach-Holder.png">
+							<img src="images/Burger-Holder.png">
 						</div>
 						<div class="info">
 							<div class="name">
@@ -138,40 +144,40 @@
 				<div class= "sectionContents">
 					<div class="landmark stackItem">
 							<span class="photo leftItem">
-								<img src="images/Beach-Holder.png">
+								<img src="images/Gardens-Holder.png">
 							</span>
 							<span class="info rightItem">
 								<div class="name">
 									Self Realization Gardens
 								</div>
 								<div class="description">
-									Lush, quiet gardens. Take a slow stroll through, enjoy the ocean breeze, and draw some deep breaths.
+									Lush, quiet gardens. Take a slow stroll through, enjoy the ocean breeze, and draw in some deep breaths.
 								</div>
 							</span>
 					</div>
-					<div class="landmark stackItem">
-							<span class="info leftItem">
+					<div class="landmark stackItem mobileSwap">
+							<span class="info leftItem infoSwap">
 								<div class="name">
 									Surfing Madonna
 								</div>
 								<div class="description">
-									Some 100% local art. If only it had a better location.
+									Some 100% local art. Do as she bids and save the ocean!
 								</div>
 							</span>
-							<span class="photo rightItem">
-								<img src="images/Beach-Holder.png">
+							<span class="photo rightItem photoSwap">
+								<img src="images/Madonna-Holder.png">
 							</span>
 					</div>
 					<div class="landmark stackItem">
 							<span class="photo leftItem">
-								<img src="images/Beach-Holder.png">
+								<img src="images/Stroll-Holder.png">
 							</span>
 							<span class="info rightItem">
 								<div class="name">
 									La Paloma Theatre
 								</div>
 								<div class="description">
-									This guy's almost as old as the dinos.
+									This guy's almost as old as the dinos. Catch a movie or maybe a Rocky Horror showing. 
 								</div>
 							</span>
 					</div>
@@ -186,7 +192,7 @@
 				<div class= "sectionContents">
 					<div class="activities rowItem">
 						<div class="photo">
-							<img src="images/Beach-Holder.png">
+							<img src="images/Madonna-Holder.png">
 						</div>
 						<div class="info">
 							<div class="name">
@@ -199,7 +205,7 @@
 					</div>
 					<div class="activities rowItem">
 						<div class="photo">
-							<img src="images/Beach-Holder.png">
+							<img src="images/Stroll-Holder.png">
 						</div>
 						<div class="info">
 							<div class="name">
@@ -223,6 +229,7 @@
 			</div>
 		</footer>
 
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="js/script.js"></script>
 		<script src="https://use.fontawesome.com/49b88b812f.js"></script>
 
